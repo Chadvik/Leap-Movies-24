@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
+import img from './CPlogo.png'
 
 const Header = () => {
   return (
@@ -8,8 +9,8 @@ const Header = () => {
       <div className="Header-left">
         <Link to="/" className="links">
           <img
-            src="CPlogo.png"
-            alt="IMDB Logo"
+            src={img}
+            alt="My Logo"
           />
         </Link>
         <Link to="/movies/top_rated" className="links">
